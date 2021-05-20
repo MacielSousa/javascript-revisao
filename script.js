@@ -1,12 +1,14 @@
-const precos = [
-    'Crédito',
-    'R$ 200',
-    'R$ 400',
-    'Contas Pagar',
-    'R$ 300',
-    'Meus dados',
-]
+const grupoA = 300;
+const grupoB = 500;
 
-const precosFiltros = precos.filter((preco) => preco.includes('R$'))
-const precosNumeros = precosFiltros.map( (preco) => Number(preco.replace('R$ ','')))
-console.log(precosNumeros)
+//Expressão
+//Exemplo 1
+const vencedor = grupoA > grupoB ? 'Grupo A, ganhou!' : 'Grupo B, ganhou!'
+
+//Exemplo 2
+const vencedor1 = grupoB * 20
+
+//Exemplo 3
+const active = false;
+const button = active && 'Botão está ativo';
+console.log(button)
